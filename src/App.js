@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter as  Router,Route, Routes, Navigate  } from 'react-router-dom';
 import './App.css';
+import Login from './Pages/Login';
+import Forgot from './Pages/Forgot';
+import Register from './Pages/Register';
+import Reset from './Pages/Reset';
+import Error from './Pages/Error';
+import Dashboard from './Pages/Dashboard';
+
 
 function App() {
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login  />} />
+        <Route path="/dash" element={<Dashboard  />} />
+        <Route path="/forgot-password" element={<Forgot />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset-password" element={<Reset />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Navigate to="/error" />} />
+      </Routes>
+    </Router> 
+    
     </div>
   );
 }

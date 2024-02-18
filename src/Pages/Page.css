@@ -1,0 +1,256 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    height: 90vh;
+    padding: 30px 0;
+    
+  }
+  
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+  }
+  
+  .auth-container > p {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .sign-options {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .single-option {
+    display: flex;
+    padding: 9px;
+    margin: 5px 0;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(66, 42, 42, 0.19);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .single-option:hover {
+    box-shadow: 0 4px 8px 0 #0095ff15, 0 6px 20px 0 #0095ff52;
+  }
+  
+  .single-option > p {
+    margin-left: 12px;
+  }
+  .single-option > img  {
+    width: 20px;
+  }
+  
+  .auth-login {
+    display: flex;
+    margin: 40px 0;
+    width: 300px;
+  }
+  
+  .auth-login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(66, 42, 42, 0.19);
+    border-radius: 3px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    
+  }
+  
+  .input-field > p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    
+  }
+  
+  .input-field > input {
+    padding: 10px;
+    border: 1px solid #0095ff8e;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;;
+    
+    /* tab-size: 5px; */
+  }
+  
+
+
+  /* CSS for ForgotPassword Component */
+
+  .auth-container-forgot > input {
+    padding: 10px;
+    border: 1px solid #0095ff8e;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    
+    /* tab-size: 5px; */
+  }
+
+  .auth-container-forgot > p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: white;
+  }
+  .input-field-forgot > input {
+    padding: 10px;
+    border: 1px solid #0095ff8e;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+  }
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Background and container styling */
+.bg-secondary {
+  background-color: #f7f7f7; 
+}
+
+.bg-white {
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 5px; 
+}
+
+/* Heading style */
+h4 {
+  font-size: 1.5rem; 
+  margin-bottom: 20px; 
+}
+
+/* Form styles */
+label {
+  font-weight: bold; 
+}
+
+.form-control {
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 10px; 
+  margin-bottom: 15px; 
+}
+
+/* Button style */
+.btn-success {
+  background-color: #0095ffb9; 
+  color: #fff; 
+  border-radius: 5px; 
+  padding: 10px; 
+  cursor: pointer; 
+}
+
+.btn-success:hover {
+  box-shadow: 0 4px 8px 0 #0095ff15, 0 6px 20px 0 #0095ff52;
+}
+
+/* ErrorPage.css */
+
+.error-page {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff0000; 
+}
+
+p {
+  font-size: 12px;
+  color: #333; 
+  
+  
+}
+
+.auth {
+  background-image: url("../Assests/Marriagehallbooking.jpg");
+  background-size: 100% auto; 
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center; /* Center text within the container */
+}
+
+.error-text {
+  font-family: Arial, sans-serif;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.error-image img {
+  max-width: 50%; 
+  height: auto;
+  animation: floatImage 1s ease infinite alternate;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.black-text {
+  color:black;
+}
